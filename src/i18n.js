@@ -13,7 +13,6 @@ i18next
   .init({
      debug: true,
      fallbackLng: 'ru',
-
   })
 
 
