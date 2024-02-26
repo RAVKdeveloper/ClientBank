@@ -1,7 +1,7 @@
-import { configureStore } from "@reduxjs/toolkit";
-import { setupListeners } from "@reduxjs/toolkit/query";
+import { configureStore } from '@reduxjs/toolkit'
+import { setupListeners } from '@reduxjs/toolkit/query'
 
-import { rootReduser } from "./rootReduser/rootReduser";
+import { rootReduser } from './rootReduser/rootReduser'
 
 
 export const store = configureStore({
