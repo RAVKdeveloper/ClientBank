@@ -12,9 +12,9 @@ jobs:
       matrix:
         node-varsion: [20.x]
     steps:
-      # - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Staring Node js ${{ matrix.node-version }}
-        uses: actions/setup-node@3
+        uses: actions/setup-node@4
         with:
           node-version: ${{ matrix.node-varsion }}
       - name: install modules

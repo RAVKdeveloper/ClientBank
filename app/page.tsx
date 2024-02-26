@@ -12,7 +12,7 @@ const HomePage: FC = () => {
   return (
     
     <main className={s.main}>
-       <Alert severity='success' color='success'>Helloo</Alert>
+       <Alert severity='success' color='success'>Hell</Alert>
     </main>
   );
 }
