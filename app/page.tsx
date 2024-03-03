@@ -2,19 +2,15 @@
 
 import { FC } from 'react';
 
-import { Alert } from '@mui/material';
-
-import s from './page.module.css';
+import { HomePage } from '@/src/pages/home/home.page'
 
 
-const HomePage: FC = () => {
+const Home: FC = () => {
   
   return (
     
-    <main className={s.main}>
-       <Alert severity='success' color='success'>Helloooo</Alert>
-    </main>
+    <HomePage />
   );
 }
 
-export default HomePage
+export default Home
