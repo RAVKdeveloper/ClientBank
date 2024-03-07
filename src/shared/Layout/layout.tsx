@@ -12,7 +12,7 @@ export const Layout: FC<Props> = ({ children }) => {
     return (
         <>
          <Header />
-          {children}
+            {children}
         </>
     )
 }

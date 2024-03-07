@@ -1,3 +1,25 @@
 {
-    "test": "привет"
+    "auth": {
+        "form": {
+            "loginFormLabel": "Логин",
+            "passFormLabel": "Пароль",
+            "updatePassLabel": "изменить пароль",
+            "btnText": "продолжить",
+            "linkReg": "Зарегистрироваться",
+            "linkLog": "Войти"
+        },
+        "bannerMarketing": {
+            "title": "Лучший %",
+            "subtitle": "Вклад со ставкой до 16% годовых. Удобные сроки – от 1 месяца до 3 лет."
+        },
+        "errors": {
+            "emptyEmail": "Невалидный email",
+            "emptyPass": "Невалидный пароль"
+        },
+        "links": {
+            "registr": "Зарегистрироваться",
+            "login": "Войти",
+            "RestoreAccess": "Восстановить доступ"
+        }
+    }
 }

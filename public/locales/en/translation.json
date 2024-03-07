@@ -1,3 +1,25 @@
 {
-    "test": "hello"
+    "auth": {
+        "form": {
+            "loginFormLabel": "Login",
+            "passFormLabel": "Password",
+            "updatePassLabel": "Change Password",
+            "btnText": "continue",
+            "linkReg": "Register",
+            "linkLog": "Log in"
+        },
+        "bannerMarketing": {
+            "title": "Best %",
+            "subtitle": "Deposit with a rate of up to 16% per annum. Convenient terms – from 1 month to 3 years."
+        },
+        "errors": {
+            "emptyEmail": "Invalid email",
+            "emptyPass": "Invalid password"
+        },
+        "links": {
+            "registr": "Registration",
+            "login": "Login",
+            "RestoreAccess": "Restore access"
+        }
+    }
 }

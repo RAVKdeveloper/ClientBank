@@ -1,1 +1,12 @@
-@import './reset/reset.css'
+@import './reset/reset.css';
+
+
+:root{
+
+    --back-white: #fff;
+
+    --color-accent: #068441; 
+    --color-black: #262626;
+    --color-title: #464646;
+
+}

@@ -2,6 +2,8 @@ export const Routes = {
     auth: {
         login: '/login',
         registration: '/registration',
-        verify: '/verify'
-    }
+        verify: '/verify',
+        forgot: '/forgot'
+    },
+    main: '/'
 } 
