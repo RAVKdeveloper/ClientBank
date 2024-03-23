@@ -9,7 +9,7 @@ import { SafetyRules } from '@/src/entitys/SafetyRules'
 const imageUrl =
   'https://esa-res.online.sberbank.ru/CMS/PRELOGINBANNERS/images/default/slide2_19122023.jpg'
 
-const LoginPage: FC = () => {
+export const LoginPage: FC = () => {
   return (
     <main>
       <SizeWrapper
@@ -24,13 +24,14 @@ const LoginPage: FC = () => {
           </>
         }
         mobile={
-          <FormBox>
-            <AuthForm />
-          </FormBox>
+          <>
+            <FormBox>
+              <AuthForm />
+            </FormBox>
+            <SafetyRules />
+          </>
         }
       />
     </main>
   )
 }
-
-export default LoginPage

@@ -2,6 +2,12 @@ import { FC } from 'react'
 
 import s from '../styles/style.module.css'
 
-export const CardSafetyRules: FC = () => {
-  return <article></article>
+import { TComponent } from '@/src/shared/TComponent'
+
+export const CardSafetyRules: FC<{ text: string }> = ({ text }) => {
+  return (
+    <article className={s.card}>
+      <TComponent str={text} />
+    </article>
+  )
 }

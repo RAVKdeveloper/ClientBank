@@ -1,0 +1,12 @@
+.root {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(336.9deg, rgba(4, 255, 44, .02), hsla(0, 0%, 100%, 0) 64.95%), 
+    radial-gradient(66.53% 100% at 73.33% 100%, rgba(0, 179, 255, .06) 0, rgba(0, 209, 255, .01) 99.69%), 
+    linear-gradient(180deg, hsla(0, 0%, 100%, 0) 50%, rgba(0, 251, 59, .05)), linear-gradient(270deg, rgba(6, 195, 255, .05), hsla(0, 0%, 100%, 0));
+    background-color: var(--back-white);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 70px;
+}

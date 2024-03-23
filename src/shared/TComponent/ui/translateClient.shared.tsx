@@ -1,6 +1,6 @@
 import { FC, memo } from 'react'
 
-import { useTranslation } from '../../i18n/i18n.instance'
+import { useTranslation } from '../../../i18n/i18n.instance'
 
 interface Props {
   str: string

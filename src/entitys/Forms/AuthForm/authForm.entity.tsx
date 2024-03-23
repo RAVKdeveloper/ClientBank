@@ -12,7 +12,7 @@ import { useAuthForm } from './logic/useAuthFom.model'
 
 import { LabelFields } from '@/src/shared/LabelFields/labelFields.shared'
 
-const TComponent = dynamic(() => import('@/src/shared/TComponent/translateClient.shared'), {
+const TComponent = dynamic(() => import('@/src/shared/TComponent/ui/translateClient.shared'), {
   ssr: true,
 })
 

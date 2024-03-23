@@ -1,14 +1,9 @@
 import { FC } from 'react'
 
-import LoginPage from '@/src/pages/(auth)/Login/login.page'
-
+import { LoginPage } from '@/src/pages'
 
 const Login: FC = () => {
-
-    return (
-
-       <LoginPage />
-    )
+  return <LoginPage />
 }
 
 export default Login
