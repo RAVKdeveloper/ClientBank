@@ -1,11 +1,13 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "plugin:prettier/recommended"
   ],
   "rules": {
     "no-unused-vars": "warn",
     "no-console": "warn",
+    "prettier/prettier": ["warn", { "endOfLine": "auto" }],
     "quotes": [
       "error",
       "single"
