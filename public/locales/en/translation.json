@@ -21,5 +21,12 @@
             "login": "Login",
             "RestoreAccess": "Restore access"
         }
+    },
+    "safetyRules": {
+        "one": "Do not tell anyone your SMS codes, even if you are being contacted on behalf of SBERBANK employees. These are scammers.",
+        "two": "If you are asked to install a program on your device under the pretext of technical support or protection of funds, do not do this. These are scammers.",
+        "three": "SberBank calls customers from the 900 phone, if the security service calls you from other phones, these are scammers.",
+        "four": "SberBank never asks customers to transfer funds to «secure accounts», only scammers do this.",
+        "title": "Safety rules"
     }
 }
