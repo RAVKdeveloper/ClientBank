@@ -4,8 +4,6 @@ import { dir } from 'i18next'
 
 import { languages, fallbackLng } from '@/src/i18n/settings/i18n.settings'
 
-import { useTranslation } from '@/src/i18n/i18n.instance'
-
 import { Providers } from '@/src/service/Redux/Provider/Provider'
 
 import '@/public/styles/global.css'
@@ -18,7 +16,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params: { lng } }: { params: { lng: string } }) {
   if (languages.indexOf(lng) < 0) lng = fallbackLng
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const { t } = await useTranslation(lng, 'client')
+  // const { t } = await useTranslation(lng, 'client')
   return {
     content: 'Test',
     title: 'Сбербанк',

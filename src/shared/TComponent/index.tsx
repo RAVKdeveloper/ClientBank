@@ -1,1 +1,3 @@
-export { TComponent } from './ui/wrapper.ui'
+import { TComponent } from './ui/wrapper.ui'
+
+export default TComponent

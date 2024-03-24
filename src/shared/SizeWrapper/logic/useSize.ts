@@ -1,25 +1,21 @@
 import { useEffect, useState } from 'react'
 
 export function useSize(): boolean {
+  const [isMobile, setIsMobile] = useState<boolean>(false)
 
-    const [ isMobile, setIsMobile ] = useState<boolean>(false)
+  const resizeFn = () => {
+    const value = window.matchMedia('(max-width: 750px)').matches
 
-    const resizeFn = () => {
-        const value = window.matchMedia('(max-width: 750px)').matches
-    
-        if(value) setIsMobile(true)
-        
-        if(!value) setIsMobile(false)
-    }
+    if (value) setIsMobile(true)
 
-    useEffect(() => {
+    if (!value) setIsMobile(false)
+  }
 
-    window.addEventListener('resize', resizeFn);
+  useEffect(() => {
+    window.addEventListener('resize', resizeFn)
 
     return () => window.removeEventListener('resize', resizeFn)
+  }, [])
 
-    }, [])
-
-    return isMobile
-
+  return isMobile
 }

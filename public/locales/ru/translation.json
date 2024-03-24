@@ -6,7 +6,12 @@
             "updatePassLabel": "изменить пароль",
             "btnText": "продолжить",
             "linkReg": "Зарегистрироваться",
-            "linkLog": "Войти"
+            "linkLog": "Войти",
+            "regTitle": "Регистрация",
+            "nameFormLabel": "Имя",
+            "middlenameFormLabel": "Отчество",
+            "surnameFormLabel": "Фамилия",
+            "emailFormLabel": "Email"
         },
         "bannerMarketing": {
             "title": "Лучший %",
