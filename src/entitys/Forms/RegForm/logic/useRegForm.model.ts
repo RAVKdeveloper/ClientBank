@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 import { useForm, SubmitHandler } from 'react-hook-form'
 import * as yup from 'yup'
@@ -6,7 +7,12 @@ import { yupResolver } from '@hookform/resolvers/yup'
 
 import type { useRegFormType, FormData } from '../assets/useRegForm.type'
 
+import { Routes } from '@/src/config/routes.config'
+
 import { useRegistrationMutation } from '@/src/service/Api/auth/auth.api'
+
+import { useAppSelector } from '@/src/service/Redux/hooks/hooks'
+import { globalSelector } from '@/src/service/Redux/slices/global/global.slice'
 
 const schema = yup.object().shape({
   name: yup
@@ -47,11 +53,14 @@ export const useRegForm = (): useRegFormType => {
   })
   const [req, { isLoading }] = useRegistrationMutation()
   const [errorText, setErrorText] = useState<string>('')
+  const { language } = useAppSelector(globalSelector)
+  const { push } = useRouter()
 
   const fetchRegistr = async (data: FormData) => {
     try {
       await req(data).unwrap()
       setErrorText('')
+      push(`/${language}L${Routes.main}`)
     } catch (e: any) {
       setErrorText(e.data.message)
     } finally {
