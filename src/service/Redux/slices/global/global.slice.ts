@@ -1,30 +1,24 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
-import { RootState } from '../../store' 
-
-
+import { RootState } from '../../store'
 
 interface IInitialState {
-    language: string
+  language: string
 }
-
 
 const initialState: IInitialState = {
-   language: 'ru',
+  language: 'ru',
 }
 
-
-
 export const globalSlice = createSlice({
-    name: 'global',
-    initialState,
-    reducers: {
-        setLanguage: (state, action: PayloadAction<string>) => {
-            state.language = action.payload
-        }
-    }
+  name: 'global',
+  initialState,
+  reducers: {
+    setLanguage: (state, action: PayloadAction<string>) => {
+      state.language = action.payload
+    },
+  },
 })
-
 
 export const globalSelector = (state: RootState) => state.globalSlice
 

@@ -1,16 +1,11 @@
-'use client';
+'use client'
 
-import { FC } from 'react';
+import { FC } from 'react'
 
 import HomePage from '@/src/pages/home/home.page'
 
-
 const Home: FC = () => {
-  
-  return (
-    
-    <HomePage />
-  );
+  return <HomePage />
 }
 
 export default Home

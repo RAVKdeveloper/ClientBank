@@ -1,6 +1,7 @@
 'use client'
 
 import { FC } from 'react'
+import dynamic from 'next/dynamic'
 
 import { Container, Typography, Box } from '@mui/material'
 
@@ -8,7 +9,7 @@ import s from '../styles/style.module.css'
 
 import { CardSafetyRules } from './CardRules.ui'
 
-import { TComponent } from '@/src/shared/TComponent'
+const TComponent = dynamic(() => import('@/src/shared/TComponent'), { ssr: true })
 
 export const SafetyRules: FC = () => {
   return (

@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import i18next from 'i18next'
 import { useEffect, useState } from 'react'
@@ -6,6 +6,7 @@ import { initReactI18next, useTranslation as useTranslationOrg } from 'react-i18
 import { useCookies } from 'react-cookie'
 import resourcesToBackend from 'i18next-resources-to-backend'
 import LanguageDetector from 'i18next-browser-languagedetector'
+
 import { getOptions, languages, cookieName } from './settings'
 
 const runsOnServerSide = typeof window === 'undefined'
@@ -13,14 +14,16 @@ const runsOnServerSide = typeof window === 'undefined'
 i18next
   .use(initReactI18next)
   .use(LanguageDetector)
-  .use(resourcesToBackend((language, namespace) => import(`./locales/${language}/${namespace}.json`)))
+  .use(
+    resourcesToBackend((language, namespace) => import(`./locales/${language}/${namespace}.json`)),
+  )
   .init({
     ...getOptions(),
-    lng: undefined, 
+    lng: undefined,
     detection: {
       order: ['path', 'htmlTag', 'cookie', 'navigator'],
     },
-    preload: runsOnServerSide ? languages : []
+    preload: runsOnServerSide ? languages : [],
   })
 
 export function useTranslation(lng, ns, options) {

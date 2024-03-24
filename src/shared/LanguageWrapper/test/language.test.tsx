@@ -1,39 +1,32 @@
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 
-import { LanguageWrapper } from '../language.shared' 
+import { Providers } from '@/src/service/Redux/Provider/Provider'
 
-import { Providers } from '@/src/service/Redux/Provider/Provider' 
-
+import { LanguageWrapper } from '../language.shared'
 
 describe('tests component', () => {
+  it('render with en', () => {
+    render(
+      <Providers lng='en'>
+        <LanguageWrapper lng='en'>hello</LanguageWrapper>
+      </Providers>,
+    )
 
-    it('render with en', () => {
+    const element = screen.getByText(/hello/i)
 
-        render(
-        <Providers lng='en'>
-            <LanguageWrapper lng='en'>hello</LanguageWrapper>
-        </Providers>
-        )
+    expect(element).toBeInTheDocument()
+  })
 
-        const element = screen.getByText(/hello/i)
+  it('render with ru', () => {
+    render(
+      <Providers lng='ru'>
+        <LanguageWrapper lng='ru'>привет</LanguageWrapper>
+      </Providers>,
+    )
 
-        expect(element).toBeInTheDocument()
+    const element = screen.getByText(/привет/i)
 
-    })
-
-    it('render with ru', () => {
-
-        render(
-        <Providers lng='ru'>
-            <LanguageWrapper lng='ru'>привет</LanguageWrapper>
-        </Providers>
-        )
-
-        const element = screen.getByText(/привет/i)
-
-        expect(element).toBeInTheDocument()
-
-    })
-
+    expect(element).toBeInTheDocument()
+  })
 })

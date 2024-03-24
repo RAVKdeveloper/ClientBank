@@ -6,7 +6,12 @@
             "updatePassLabel": "Change Password",
             "btnText": "continue",
             "linkReg": "Register",
-            "linkLog": "Log in"
+            "linkLog": "Log in",
+            "regTitle": "Registration",
+            "nameFormLabel": "Name",
+            "middlenameFormLabel": "Middlename",
+            "surnameFormLabel": "Surname",
+            "emailFormLabel": "Email"
         },
         "bannerMarketing": {
             "title": "Best %",
