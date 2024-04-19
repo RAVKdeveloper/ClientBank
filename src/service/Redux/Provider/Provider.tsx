@@ -2,9 +2,9 @@
 
 import { Provider } from 'react-redux'
 
-import { LanguageWrapper } from '@/src/shared/LanguageWrapper/language.shared'
-
 import { store } from '../store'
+
+import { LanguageWrapper } from '@/src/shared/LanguageWrapper/language.shared'
 
 export function Providers({ children, lng }: { children: React.ReactNode; lng: string }) {
   return (
